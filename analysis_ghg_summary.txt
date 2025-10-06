@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_ghg   R-squared:                       0.592
+Model:                            OLS   Adj. R-squared:                  0.590
+Method:                 Least Squares   F-statistic:                     341.3
+Date:                Mon, 06 Oct 2025   Prob (F-statistic):          7.69e-213
+Time:                        00:54:21   Log-Likelihood:                -238.29
+No. Observations:                1000   AIC:                             488.6
+Df Residuals:                     994   BIC:                             518.0
+Df Model:                           5                                         
+Covariance Type:                  HC3                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              0.2333      0.061      3.809      0.000       0.113       0.353
+C(region)[T.North]    -0.0033      0.030     -0.113      0.910      -0.062       0.055
+C(region)[T.South]    -0.0061      0.028     -0.219      0.826      -0.060       0.048
+C(region)[T.West]     -0.0289      0.030     -0.954      0.340      -0.088       0.030
+log_fertilizer         0.2420      0.013     18.100      0.000       0.216       0.268
+livestock_units        0.1470      0.004     34.249      0.000       0.139       0.155
+==============================================================================
+Omnibus:                        3.927   Durbin-Watson:                   1.964
+Prob(Omnibus):                  0.140   Jarque-Bera (JB):                3.791
+Skew:                           0.132   Prob(JB):                        0.150
+Kurtosis:                       3.147   Cond. No.                         53.4
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)

@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           income_local   R-squared:                       0.791
+Model:                            OLS   Adj. R-squared:                  0.790
+Method:                 Least Squares   F-statistic:                     345.8
+Date:                Mon, 06 Oct 2025   Prob (F-statistic):          1.32e-214
+Time:                        00:54:21   Log-Likelihood:                -9191.5
+No. Observations:                1000   AIC:                         1.840e+04
+Df Residuals:                     994   BIC:                         1.842e+04
+Df Model:                           5                                         
+Covariance Type:                  HC3                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept          -4.185e+04   1503.399    -27.835      0.000   -4.48e+04   -3.89e+04
+C(region)[T.North]   -45.0330    233.570     -0.193      0.847    -502.822     412.756
+C(region)[T.South]   102.3739    221.446      0.462      0.644    -331.653     536.401
+C(region)[T.West]    174.2944    244.212      0.714      0.475    -304.351     652.940
+log_yield           1.272e+04    396.495     32.080      0.000    1.19e+04    1.35e+04
+log_farm_size       1098.8588    166.237      6.610      0.000     773.041    1424.677
+==============================================================================
+Omnibus:                       44.063   Durbin-Watson:                   2.005
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               64.876
+Skew:                           0.387   Prob(JB):                     8.17e-15
+Kurtosis:                       3.979   Cond. No.                         78.9
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
